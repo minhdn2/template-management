@@ -13,7 +13,7 @@ class App extends Component {
   }
   render() {
     return (
-      <Admin />
+      <Admin templates={this.state.templates} />
     );
   }
 }
