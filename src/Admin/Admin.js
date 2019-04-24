@@ -3,12 +3,11 @@ import AdminLeftPanel from './AdminLeftPanel';
 import AdminRightPanel from './AdminRightPanel';
 
 class Admin extends Component {
-    state = this.props;
     render() {
         return (
             <div>
                 <AdminLeftPanel />
-                <AdminRightPanel templates={this.state.templates} />
+                <AdminRightPanel templates={this.props.templates} />
             </div>
         );
     }

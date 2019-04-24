@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Template from './../Template';
 
 class AdminRightPanel extends Component {
-    state = this.props;
     render() {
         return (
             <div id="right-panel" className="right-panel">
@@ -105,7 +104,7 @@ class AdminRightPanel extends Component {
                 {/* /#header */}
                 {/* Content */}
                 <div className="content">
-                    <Template templates={this.state.templates} />
+                    <Template templates={this.props.templates} />
                 </div>
                 {/* /.content */}
                 <div className="clearfix" />
