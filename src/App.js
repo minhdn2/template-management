@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Template from './Template';
+import Admin from "./Admin/Admin";
 
 class App extends Component {
   state = {
@@ -12,14 +13,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1>Templates Management!</h1>
-        <p>
-          Welcome ^.^
-        </p>
-
-        <Template templates={this.state.templates} />
-      </div>
+      <Admin />
     );
   }
 }
