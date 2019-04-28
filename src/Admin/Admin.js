@@ -7,7 +7,7 @@ class Admin extends Component {
         return (
             <div>
                 <AdminLeftPanel />
-                <AdminRightPanel templates={this.props.templates} />
+                <AdminRightPanel templates={this.props.templates} addTemplate={this.props.addTemplate}/>
             </div>
         );
     }

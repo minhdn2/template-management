@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
-import Template from './../Template';
+import Template from '../components/Template';
+import AddTemplate from './../adding/AddTemplate';
+import { BrowserRouter, Route } from 'react-router-dom';
+import About from './../components/About';
+import Contact from './../components/Contact';
 
 class AdminRightPanel extends Component {
+    state = {
+        imgSrc: null,
+        title: null,
+        shortDescription: null,
+        previewLink: null
+    }
     render() {
         return (
+
             <div id="right-panel" className="right-panel">
                 {/* Header*/}
                 <header id="header" className="header">
@@ -104,7 +115,10 @@ class AdminRightPanel extends Component {
                 {/* /#header */}
                 {/* Content */}
                 <div className="content">
-                    <Template templates={this.props.templates} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/template" component={() => <Template templates={this.props.templates} />} />
+                    <Route path="/addTemplate" component={() => <AddTemplate addTemplate={this.props.addTemplate} />} />
                 </div>
                 {/* /.content */}
                 <div className="clearfix" />
@@ -116,7 +130,7 @@ class AdminRightPanel extends Component {
                                 Copyright © 2019 Bootstrap 4.0
                             </div>
                             <div className="col-sm-6 text-right">
-                                {/* Designed by <a href="https://colorlib.com">Colorlib</a> */}
+                                Designed by <a href="https://colorlib.com">Colorlib</a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const Template = ({templates}) => {
+const Template = ({ templates }) => {
     const templateList = templates.map(template => {
         return (
             <div className="col-md-4" key={template.id}>
