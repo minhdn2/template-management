@@ -9,7 +9,7 @@ class AddTemplate extends Component {
     }
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value
+            [e.target.id]: e.target.id === 'imgSrc' || e.target.id === 'previewLink' ? 'template-management/' + e.target.value : e.target.value
         })
     }
     handleSubmit = (e) => {
