@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/template-management/static/css/main.795991f2.chunk.css",
-    "main.js": "/template-management/static/js/main.9991054a.chunk.js",
-    "main.js.map": "/template-management/static/js/main.9991054a.chunk.js.map",
+    "main.js": "/template-management/static/js/main.d7dd9247.chunk.js",
+    "main.js.map": "/template-management/static/js/main.d7dd9247.chunk.js.map",
     "runtime~main.js": "/template-management/static/js/runtime~main.297b3791.js",
     "runtime~main.js.map": "/template-management/static/js/runtime~main.297b3791.js.map",
     "static/js/2.460d0edc.chunk.js": "/template-management/static/js/2.460d0edc.chunk.js",
     "static/js/2.460d0edc.chunk.js.map": "/template-management/static/js/2.460d0edc.chunk.js.map",
     "index.html": "/template-management/index.html",
-    "precache-manifest.327f878b4ec043d2057875191ff65f85.js": "/template-management/precache-manifest.327f878b4ec043d2057875191ff65f85.js",
+    "precache-manifest.996e751b727f3c92d493b95b85c2e64a.js": "/template-management/precache-manifest.996e751b727f3c92d493b95b85c2e64a.js",
     "service-worker.js": "/template-management/service-worker.js",
     "static/css/main.795991f2.chunk.css.map": "/template-management/static/css/main.795991f2.chunk.css.map"
   }
