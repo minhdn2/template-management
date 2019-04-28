@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Template from '../components/Template';
 import AddTemplate from './../adding/AddTemplate';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, withRouter } from 'react-router-dom';
 import About from './../components/About';
 import Contact from './../components/Contact';
 
@@ -117,13 +117,17 @@ class AdminRightPanel extends Component {
                 <div className="content">
                     <Route path="/template-management/about" component={About} />
                     <Route path="/template-management/contact" component={Contact} />
-                    <Route path="/template-management/template" component={() => <Template templates={this.props.templates} />} />
-                    <Route path="/template-management/addTemplate" component={() => <AddTemplate addTemplate={this.props.addTemplate} />} />
+                    <Route path="/template-management/templates" component={() => <Template templates={this.props.templates} />} />
+                    <Route path="/template-management/addTemplate" component={() => <AddTemplate navigationHistory={this.props.history} addTemplate={this.props.addTemplate} />} />
+                    {/* <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/templates" component={() => <Template templates={this.props.templates} />} />
+                    <Route path="/addTemplate" component={() => <AddTemplate navigationHistory={this.props.history} addTemplate={this.props.addTemplate} />} /> */}
                 </div>
                 {/* /.content */}
                 <div className="clearfix" />
                 {/* Footer */}
-                <footer className="site-footer">
+                {/* <footer className="site-footer">
                     <div className="footer-inner bg-white">
                         <div className="row">
                             <div className="col-sm-6">
@@ -134,11 +138,11 @@ class AdminRightPanel extends Component {
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> */}
                 {/* /.site-footer */}
             </div>
         );
     }
 }
 
-export default AdminRightPanel
+export default withRouter(AdminRightPanel)

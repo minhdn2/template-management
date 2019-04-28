@@ -1,6 +1,5 @@
 {
-    "templates": [
-        {
+    "templates": [{
             "id": 1,
             "imgSrc": "templates/landerz/cover.png",
             "title": "Landerz",

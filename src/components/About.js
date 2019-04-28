@@ -1,10 +1,10 @@
 import React from 'react';
 
-const About = () => {
+const About = (props) => {
     return (
         <div className="container">
             <h4 className="center">This is the About page</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Morbi egestas, quam eu scelerisque mattis, purus arcu interdum dui, sed porta neque justo ac ex. Integer ut vulputate velit, non porttitor arcu. Aliquam interdum pretium urna, id bibendum ante euismod sit amet. In facilisis scelerisque sagittis. Nulla at dictum arcu. Quisque viverra faucibus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras cursus libero in libero cursus dignissim. Curabitur dapibus at metus eu venenatis. Suspendisse quam lacus, lacinia a risus at, eleifend aliquam ligula. Mauris in rhoncus tortor, vel varius nulla.</p>
         </div>
     )
 }
