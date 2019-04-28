@@ -9,7 +9,7 @@ class AddTemplate extends Component {
     }
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.id === 'imgSrc' || e.target.id === 'previewLink' ? 'template-management/' + e.target.value : e.target.value
+            [e.target.id]: e.target.value
         })
     }
     handleSubmit = (e) => {
@@ -21,8 +21,8 @@ class AddTemplate extends Component {
             <div className="col-md-6">
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="imgScr">Image Link:</label>
-                        <input type="text" id="imgScr" className="form-control" onChange={this.handleChange} />
+                        <label htmlFor="imgSrc">Image Link:</label>
+                        <input type="text" id="imgSrc" className="form-control" onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="title">Title:</label>
