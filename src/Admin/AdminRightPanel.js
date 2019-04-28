@@ -115,10 +115,10 @@ class AdminRightPanel extends Component {
                 {/* /#header */}
                 {/* Content */}
                 <div className="content">
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/template" component={() => <Template templates={this.props.templates} />} />
-                    <Route path="/addTemplate" component={() => <AddTemplate addTemplate={this.props.addTemplate} />} />
+                    <Route path="/template-management/about" component={About} />
+                    <Route path="/template-management/contact" component={Contact} />
+                    <Route path="/template-management/template" component={() => <Template templates={this.props.templates} />} />
+                    <Route path="/template-management/addTemplate" component={() => <AddTemplate addTemplate={this.props.addTemplate} />} />
                 </div>
                 {/* /.content */}
                 <div className="clearfix" />

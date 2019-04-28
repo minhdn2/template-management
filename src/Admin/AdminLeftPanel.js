@@ -9,19 +9,19 @@ class AdminLeftPanel extends Component {
                     <div id="main-menu" className="main-menu collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li className="active">
-                                <Link to="/template"><i className="menu-icon fa fa-home" />Home </Link>
+                                <Link to="/template-management/template"><i className="menu-icon fa fa-home" />Home </Link>
                             </li>
 
                             <li className="menu-title">Features</li>{/* /.menu-title */}
                             <li>
-                                <Link to="/addTemplate">
+                                <Link to="/template-management/addTemplate">
                                     <i className="menu-icon fa fa-cogs" />
                                     Add new template</Link>
                             </li>
 
                             <li className="menu-title">Pages</li>{/* /.menu-title */}
-                            <li><Link to="/about"><i className="menu-icon fa fa-book" />About</Link></li>
-                            <li><Link to="/contact"><i className="menu-icon fa fa-phone-square" />Contact</Link></li>
+                            <li><Link to="/template-management/about"><i className="menu-icon fa fa-book" />About</Link></li>
+                            <li><Link to="/template-management/contact"><i className="menu-icon fa fa-phone-square" />Contact</Link></li>
 
                             {/* <li className="menu-title">Extras</li>
                             <li className="menu-item-has-children dropdown">
