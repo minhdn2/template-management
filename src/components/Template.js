@@ -5,7 +5,7 @@ const Template = ({ templates }) => {
         return (
             <div className="col-md-4" key={template.id}>
                 <div className="card">
-                    <img className="card-img-top" src={template.imgSrc} alt="Card cover cap"></img>
+                    <img className="card-img-top" src={'template-management' + template.imgSrc} alt="Card cover cap"></img>
                     <div className="card-body">
                         <h5 className="card-title">{template.title}</h5>
                         <p className="card-text">{template.shortDescription}</p>
